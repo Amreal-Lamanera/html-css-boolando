@@ -33,6 +33,7 @@
 .footer__list.row {
     gap: 10px;
     color: #FFF;
+    cursor: pointer;
 }
 
 /* Main */
