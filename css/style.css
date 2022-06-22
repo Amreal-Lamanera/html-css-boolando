@@ -6,6 +6,7 @@
 
 .row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 /* Header */
@@ -23,4 +24,19 @@
 
 .logo__img {
     width: 150px;
+}
+
+/* Main */
+.cards-collection {
+    padding: 50px 0;
+}
+
+.cards-collection .container-row {
+    margin: 0 -10px;
+}
+
+.card.col.row {
+    width: calc(100% / 3);
+    padding: 0 10px;
+    flex-direction: column-reverse;
 }
