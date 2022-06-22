@@ -40,3 +40,35 @@
     padding: 0 10px;
     flex-direction: column-reverse;
 }
+
+.card__image {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    bottom: 45px;
+    left: 0px;
+}
+
+.badge * {
+    padding: 5px 10px;
+    color: #FFF;
+}
+
+.badge__discount {
+    background-color: #FF0000;
+}
+
+.badge__category {
+    background-color: #008000;
+}
+
+.card__love {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 5px 10px;
+    background-color: #FFF;
+    font-size: 2em;
+}
