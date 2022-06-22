@@ -29,6 +29,10 @@
     width: 150px;
 }
 
+.nav__list.row {
+    gap: 10px;
+}
+
 /* Main */
 .cards-collection {
     padding-top: 80px;
