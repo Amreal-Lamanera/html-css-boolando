@@ -67,6 +67,18 @@
     position: relative;
 }
 
+.card__image img:last-of-type {
+    display: none;
+}
+
+.card__image:hover img:first-of-type {
+    display: none;
+}
+
+.card__image:hover img:last-of-type {
+    display: inline-block;
+}
+
 .badge {
     position: absolute;
     bottom: 45px;
