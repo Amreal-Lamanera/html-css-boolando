@@ -1,0 +1,26 @@
+/* Regole Generali */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+/* Header */
+.nav-bar {
+    background-color: #FF6900;
+    padding: 20px 0;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 1);
+    color: #FFF;
+}
+
+.container.row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__img {
+    width: 150px;
+}
