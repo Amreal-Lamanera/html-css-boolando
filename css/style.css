@@ -2,6 +2,8 @@
 .container {
     max-width: 1400px;
     margin: 0 auto;
+    /* Overflow hidden evita che mi si crei la scrollbar orizzontale quando la la width della pagina scende sotto a 1400 + valore di margin negativo */
+    overflow: hidden;
 }
 
 .row {
