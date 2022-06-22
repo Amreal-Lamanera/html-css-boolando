@@ -63,6 +63,11 @@
     font-weight: bold;
 }
 
+.card__love:hover {
+    color: #FF0000;
+    cursor: pointer;
+}
+
 .card__image {
     position: relative;
 }
