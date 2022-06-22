@@ -64,6 +64,10 @@
     font-weight: bold;
 }
 
+.price .old-price {
+    text-decoration: line-through;
+}
+
 .card__love:hover {
     color: #FF0000;
     cursor: pointer;
