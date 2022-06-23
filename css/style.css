@@ -1,9 +1,10 @@
 /* Regole Generali */
 .container {
-    max-width: 1400px;
-    margin: 0 auto;
+    /* max-width: 1400px; */
+    /* margin: 0 auto; */
     /* Overflow hidden evita che mi si crei la scrollbar orizzontale quando la la width della pagina scende sotto a 1400 + valore di margin negativo */
-    overflow: hidden;
+    /* overflow: hidden; */
+    /* Devo rimuoverlo sennò mi taglia il cuoricino dell'immagine - ignorerò il fatto che se vado sotto i 1400 e qualcosa px di larghezza di pagina mi si crea la scroll bar orizzontale */
 }
 
 .row {
@@ -13,6 +14,46 @@
 
 .flex {
     display: flex;
+}
+
+/* For mobile phones: */
+[class*="col-4"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+
+    /* For tablets: */
+    .col-4 {
+        width: calc(100% / 2);
+        padding: 50px 0 25px;
+    }
+
+    .col-4:nth-child(odd) {
+        padding-right: 10px;
+    }
+
+    .col-4:nth-child(even) {
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (min-width: 1456px) {
+
+    /* For desktop: */
+    .col-4 {
+        width: calc(100% / 3);
+        padding: 50px 10px 25px;
+    }
+
+    .cards-collection .row {
+        margin: 0 -10px;
+    }
+
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
 }
 
 /* Header */
@@ -53,14 +94,13 @@
     padding-top: 80px;
 }
 
-.cards-collection .row {
+/* .cards-collection .row {
     margin: 0 -10px;
-}
+} */
 
 .card.col-4.row {
-    width: calc(100% / 3);
     flex-direction: column-reverse;
-    padding: 50px 10px 25px;
+    /* padding: 50px 10px 25px; */
 }
 
 .description__title {
@@ -127,7 +167,10 @@
     position: absolute;
     top: 10px;
     right: 0;
-    padding: 5px 10px;
+    width: 50px;
+    aspect-ratio: 1/1;
+    text-align: center;
+    line-height: 50px;
     background-color: #FFF;
     font-size: 2em;
 }
