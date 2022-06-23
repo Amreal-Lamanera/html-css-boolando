@@ -100,6 +100,7 @@
 
 .card.col-4.row {
     flex-direction: column-reverse;
+    align-items: flex-start;
     /* padding: 50px 10px 25px; */
 }
 
