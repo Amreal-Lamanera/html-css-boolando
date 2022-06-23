@@ -36,11 +36,11 @@
     gap: 10px;
     color: #FFF;
     cursor: pointer;
-    align-items: center;
 }
 
 .nav__profile .nav__love {
-    font-size: 2em;
+    font-size: 1.8em;
+    line-height: 0.6em;
 }
 
 /* Main */
