@@ -36,6 +36,11 @@
     gap: 10px;
     color: #FFF;
     cursor: pointer;
+    align-items: center;
+}
+
+.nav__profile .nav__love {
+    font-size: 2em;
 }
 
 /* Main */
@@ -132,6 +137,7 @@
 
 .footer-boolando .row {
     justify-content: space-between;
+    align-items: center;
 }
 
 .copy__title,
